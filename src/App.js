@@ -12,6 +12,10 @@ export default function App() {
     setColor("yellow");
   };
 
+  const handleGreen = () => {
+    setColor("green");
+  };
+
   return (
     <div className="App">
       <section>
@@ -22,7 +26,7 @@ export default function App() {
           <h2 id="slowButton" className="button" onClick={handleYellow}>
             Slow
           </h2>
-          <h2 id="goButton" className="button">
+          <h2 id="goButton" className="button" onClick={handleGreen}>
             Go
           </h2>
         </div>
