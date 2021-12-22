@@ -1,6 +1,9 @@
+import React, { useState } from "react";
 import "./styles.css";
 
 export default function App() {
+  const [color, setColor] = useState({ backgroundColor: "#111" });
+
   return (
     <div className="App">
       <section>
@@ -16,9 +19,9 @@ export default function App() {
           </h2>
         </div>
         <div id="traffic-light">
-          <div id="stopLight" className="bulb"></div>
-          <div id="slowLight" className="bulb"></div>
-          <div id="goLight" className="bulb"></div>
+          <div id="stopLight" style={color} className="bulb"></div>
+          <div id="slowLight" style={color} className="bulb"></div>
+          <div id="goLight" style={color} className="bulb"></div>
         </div>
       </section>
     </div>
