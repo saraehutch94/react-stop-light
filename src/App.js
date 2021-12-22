@@ -8,6 +8,10 @@ export default function App() {
     setColor("red");
   };
 
+  const handleYellow = () => {
+    setColor("yellow");
+  };
+
   return (
     <div className="App">
       <section>
@@ -15,7 +19,7 @@ export default function App() {
           <h2 id="stopButton" className="button" onClick={handleRed}>
             Stop
           </h2>
-          <h2 id="slowButton" className="button">
+          <h2 id="slowButton" className="button" onClick={handleYellow}>
             Slow
           </h2>
           <h2 id="goButton" className="button">
