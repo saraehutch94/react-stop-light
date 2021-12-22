@@ -2,18 +2,20 @@ import React, { useState } from "react";
 import "./styles.css";
 
 export default function App() {
-  const [color, setColor] = useState("#111");
+  const [red, setRed] = useState("#111");
+  const [yellow, setYellow] = useState("#111");
+  const [green, setGreen] = useState("#111");
 
   const handleRed = () => {
-    setColor("red");
+    setRed("red");
   };
 
   const handleYellow = () => {
-    setColor("yellow");
+    setYellow("yellow");
   };
 
   const handleGreen = () => {
-    setColor("green");
+    setGreen("green");
   };
 
   return (
@@ -33,17 +35,17 @@ export default function App() {
         <div id="traffic-light">
           <div
             id="stopLight"
-            style={{ backgroundColor: color }}
+            style={{ backgroundColor: red }}
             className="bulb"
           ></div>
           <div
             id="slowLight"
-            style={{ backgroundColor: color }}
+            style={{ backgroundColor: yellow }}
             className="bulb"
           ></div>
           <div
             id="goLight"
-            style={{ backgroundColor: color }}
+            style={{ backgroundColor: green }}
             className="bulb"
           ></div>
         </div>
