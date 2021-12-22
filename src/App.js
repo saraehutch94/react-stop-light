@@ -8,14 +8,20 @@ export default function App() {
 
   const handleRed = () => {
     setRed("red");
+    setYellow("#111");
+    setGreen("#111");
   };
 
   const handleYellow = () => {
     setYellow("yellow");
+    setRed("#111");
+    setGreen("#111");
   };
 
   const handleGreen = () => {
     setGreen("green");
+    setRed("#111");
+    setYellow("#111");
   };
 
   return (
