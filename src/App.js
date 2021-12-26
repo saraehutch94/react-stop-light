@@ -8,27 +8,7 @@ export default function App() {
     green: "#111"
   });
 
-  const handleLight = (e) => {
-    if (e.target.id === "stopButton") {
-      setLight({
-        red: "red",
-        yellow: "#111",
-        green: "#111"
-      });
-    } else if (e.target.id === "slowButton") {
-      setLight({
-        red: "#111",
-        yellow: "yellow",
-        green: "#111"
-      });
-    } else {
-      setLight({
-        red: "#111",
-        yellow: "#111",
-        green: "green"
-      });
-    }
-  };
+  const handleLight = (e) => {};
 
   return (
     <div className="App">
