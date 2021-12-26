@@ -2,10 +2,6 @@ import React, { useState } from "react";
 import "./styles.css";
 
 export default function App() {
-  // const [red, setRed] = useState("#111");
-  // const [yellow, setYellow] = useState("#111");
-  // const [green, setGreen] = useState("#111");
-
   const [lightState, setLight] = useState({
     red: "#111",
     yellow: "#111",
@@ -13,26 +9,26 @@ export default function App() {
   });
 
   const handleLight = (e) => {
-    console.log(e.target);
+    if (e.target.id === "stopButton") {
+      setLight({
+        red: "red",
+        yellow: "#111",
+        green: "#111"
+      });
+    } else if (e.target.id === "slowButton") {
+      setLight({
+        red: "#111",
+        yellow: "yellow",
+        green: "#111"
+      });
+    } else {
+      setLight({
+        red: "#111",
+        yellow: "#111",
+        green: "green"
+      });
+    }
   };
-
-  // const handleRed = () => {
-  //   setRed("red");
-  //   setYellow("#111");
-  //   setGreen("#111");
-  // };
-
-  // const handleYellow = () => {
-  //   setYellow("yellow");
-  //   setRed("#111");
-  //   setGreen("#111");
-  // };
-
-  // const handleGreen = () => {
-  //   setGreen("green");
-  //   setRed("#111");
-  //   setYellow("#111");
-  // };
 
   return (
     <div className="App">
