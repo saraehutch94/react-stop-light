@@ -14,13 +14,13 @@ export default function App() {
     <div className="App">
       <section>
         <div id="controlPanel">
-          <h2 id="stopButton" className="button" onClick={handleLight}>
+          <h2 id="red" className="button" onClick={handleLight}>
             Stop
           </h2>
-          <h2 id="slowButton" className="button" onClick={handleLight}>
+          <h2 id="yellow" className="button" onClick={handleLight}>
             Slow
           </h2>
-          <h2 id="goButton" className="button" onClick={handleLight}>
+          <h2 id="green" className="button" onClick={handleLight}>
             Go
           </h2>
         </div>
