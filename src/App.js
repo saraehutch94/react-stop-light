@@ -8,7 +8,17 @@ export default function App() {
     green: "#111"
   });
 
-  const handleLight = (e) => {};
+  const handleLight = (e) => {
+    const greyLightState = {
+      red: "#111",
+      yellow: "#111",
+      green: "#111"
+    };
+    setLight({
+      ...greyLightState,
+      [e.target.id]: e.target.id
+    });
+  };
 
   return (
     <div className="App">
